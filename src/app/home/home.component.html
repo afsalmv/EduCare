@@ -1,0 +1,25 @@
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <form action="" class="form">
+        <h2>Welcome Back Mr/Mrs Cool</h2>
+        <div class="input-group">
+          <input  name="loginUser" id="loginUser" [(ngModel)]="Username" placeholder="username" required />
+        </div>
+        <div class="input-group">
+          <input placeholder="Password"
+            name="loginPassword"
+            id="loginPassword" [(ngModel)]="password"
+            required
+          />
+        </div>
+        <input type="submit" value="Login" class="submit-btn" (click)=Submit() />
+        <label style="text-size-adjust: 10px;">Don't have any account </label>
+      </form>
+    </div>
+  </body>
